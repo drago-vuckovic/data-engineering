@@ -48,17 +48,25 @@
 
     - `docker run -it test:pandas`
   
-  - run posgresql container from the following docker command
+  - run posgresql container from the following docker commands
 
-  ```bash
-      sudo docker run -it \
-      -e POSTGRES_USER=root \
-      -e POSTGRES_PASSWORD=root \
-      -e POSTGRES_DB=ny_taxi \
-      -v "$(pwd)"/ny_taxi_postgres_data:/var/lib/postgresql/data \
-      -p 5432:5432 \
-      postgres:13
-  ```
+    - create a docker network
+
+      ```bash
+      docker network create pg-network
+      ```
+
+      ```bash
+          sudo docker run -it \
+          -e POSTGRES_USER=root \
+          -e POSTGRES_PASSWORD=root \
+          -e POSTGRES_DB=ny_taxi \
+          -v "$(pwd)"/ny_taxi_postgres_data:/var/lib/postgresql/data \
+          -p 5432:5432 \
+          --network=pg-network \
+          --name pg-database \
+          postgres:13
+      ```
 
   - run pgadmin
 
@@ -67,6 +75,8 @@
       -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
       -e PGADMIN_DEFAULT_PASSWORD="root" \
       -p 8080:80 \
+      --network=pg-network \
+      --name pgadmin-2 \
       dpage/pgadmin4
     ```
 
@@ -85,12 +95,6 @@
         - password: `root`
 
       - create a docker network
-
-        ```bash
-        docker network create pg-network
-        ```
-
-        
 
 - install pgcli
 
@@ -223,4 +227,3 @@
     print ('inserted anouther chunk, took %.3f seconds' % (t_end - t_start))
 
     ```
-

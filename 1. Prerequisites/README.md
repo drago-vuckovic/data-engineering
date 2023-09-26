@@ -227,3 +227,215 @@
     print ('inserted anouther chunk, took %.3f seconds' % (t_end - t_start))
 
     ```
+
+## Generate the SSH Key Pair
+
+- To generate a new SSH key pair (public and private key), use the following command:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "drago@vuckovic.co"
+```
+
+  - This email address is used as a label to help identify the key later if needed.
+
+`-t rsa`: Specifies the key type as RSA.
+
+`-b 4096`: Sets the key length to 4096 bits (recommended for increased security).
+
+`-C "drago@vuckovic.co"`: Provides a comment to help identify the key (you can use any comment you like).
+
+Choose a Location: The ssh-keygen command will prompt you to choose a location to save the keys. By default, it saves the keys in your home directory under ~/.ssh/id_rsa (private key) and ~/.ssh/id_rsa.pub (public key). You can press Enter to accept the default location or specify a different one if you prefer.
+
+Choose a Passphrase (Optional): You can choose to secure your private key with a passphrase. This adds an extra layer of security but requires you to enter the passphrase each time you use the key. If you want to set a passphrase, enter it when prompted.
+
+Key Generation: The ssh-keygen command will generate your SSH key pair. It will display a message indicating that your keys have been created.
+
+View Your Public Key: You can view the content of your public key by using a command like cat. For example:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+This will display the public key in the terminal. You can copy and paste this public key when needed to authorize access to your SSH server or services.
+
+### Upload the public key to GCP
+
+To upload your SSH public key to Google Cloud Platform (GCP), you can add it to the metadata of your Google Cloud user account. 
+
+- Generate Your SSH Key Pair: If you haven't already generated an SSH key pair, follow the instructions in the previous response to generate one. Make sure you have your SSH public key file (~/.ssh/id_rsa.pub) ready.
+
+- Open the Google Cloud Console:
+
+  - Visit the Google Cloud Console at https://console.cloud.google.com/ and sign in to your Google Cloud account.
+
+  - Navigate to the Compute Engine SSH Keys Page:
+
+  a. Click on the menu icon (☰) in the upper left corner to open the navigation menu.
+
+  b. Under "Compute," select "Compute Engine."
+
+  c. In the left sidebar, under "Metadata," select "SSH Keys."
+
+  Add Your SSH Public Key:
+
+  a. Click the "Edit" button at the top of the page.
+
+  b. In the "SSH Keys" section, click the "Add item" button.
+
+  c. In the "Key" field, paste the content of your SSH public key file (~/.ssh/id_rsa.pub).
+
+  d. Optionally, provide a name or description for the key in the "Name" field (e.g., "My SSH Key").
+
+  e. Click the "Save" button to add the SSH key.
+
+- Confirm the Key Addition:
+
+  - After adding the SSH key, you should see it listed in the "SSH Keys" section. Ensure that the key you added matches your public key.
+
+Now, your SSH public key is associated with your Google Cloud account, and you can use it to authenticate when connecting to instances or services within GCP.
+
+When you create a new Google Compute Engine (GCE) instance or use other GCP services that require SSH access, you can specify your SSH key as a metadata item, and it will be automatically added to the instance for authentication
+
+## Create a VM in GCP
+
+- Open Google Cloud Console:
+
+  - Visit the Google Cloud Console at https://console.cloud.google.com/ and sign in to your Google Cloud account.
+
+  - Select Your Project:
+
+    If you have multiple projects, ensure that you have selected the project in which you want to create the VM. You can select the project from the project selector located at the top of the console.
+
+  - Navigate to Compute Engine:
+
+    In the Google Cloud Console, click on the menu icon (☰) in the upper left corner to open the navigation menu. Under "Compute," select "Compute Engine."
+
+  - Create a VM Instance:
+
+      a. On the Compute Engine page, click the "Create" button to create a new VM instance.
+
+      b. In the "Create an instance" page, you'll need to provide the following information:
+
+      Name: Enter a name for your VM instance.
+
+      Region and Zone: Choose the region and zone where you want to create the VM. This determines the physical location of your VM.
+
+      Machine Type: Select the desired machine type for your VM. This determines the CPU and memory configuration.
+
+      Boot Disk: Choose an operating system for your VM by selecting an image. You can also customize the size and type of the boot disk.
+
+      Firewall: You can specify firewall rules to allow or deny incoming traffic to your VM. You can leave the default settings or customize them as needed.
+
+      Networking: Configure network settings for your VM, including the VPC (Virtual Private Cloud) network and subnet it will be associated with. You can also assign a static external IP address if required.
+
+      Identity and API access: You can configure service account and access scopes if needed.
+
+      SSH Keys: You can add your SSH public key to allow SSH access to the VM. This is optional, and you can manage SSH access using other methods, including the metadata SSH key option.
+
+      c. After configuring the settings, review them to ensure they are correct.
+
+      d. Click the "Create" button at the bottom of the page to create the VM instance.
+
+  - Wait for VM Creation:
+
+    Google Cloud will start provisioning your VM instance. The time it takes to create the VM may vary depending on the configuration and the selected image.
+
+- Access Your VM:
+
+Once the VM is created, you can access it via SSH using the Google Cloud Console's SSH button or by using an SSH client. If you added your SSH key during VM creation, you can use it to log in.
+
+## SSH Into The VM
+
+To SSH into a Virtual Machine (VM) in Google Cloud Platform (GCP), you can use the Google Cloud Console's built-in SSH feature or an SSH client on your local machine. Here are the steps for both methods:
+
+- Method 1: Using Google Cloud Console SSH
+
+  Open Google Cloud Console:
+
+  - Visit the Google Cloud Console at https://console.cloud.google.com/ and sign in to your Google Cloud account.
+
+  - Navigate to Compute Engine:
+
+    In the Google Cloud Console, click on the menu icon (☰) in the upper left corner to open the navigation menu. Under "Compute," select "Compute Engine."
+
+  - Locate Your VM:
+
+    On the "VM instances" page, you will see a list of your VM instances. Find the VM you want to SSH into and locate the "SSH" button on the right-hand side of the VM entry.
+
+  - Click the SSH Button:
+
+    Click the "SSH" button next to your VM's name. Google Cloud Console will open an SSH terminal session in your browser, and you will be logged into your VM.
+
+- Method 2: Using an SSH Client (Local)
+
+  Open a Terminal on Your Local Machine:
+
+  - You need an SSH client on your local machine to use this method. Most Linux and macOS systems have SSH pre-installed. For Windows, you can use tools like PuTTY or Windows Subsystem for Linux (WSL).
+
+  - Determine the External IP Address of Your VM:
+
+    You can find the external IP address of your VM in the Google Cloud Console under the "VM instances" page.
+
+  - SSH into Your VM:
+
+    Open a terminal on your local machine and use the following command to SSH into your VM, replacing <VM_EXTERNAL_IP> with your VM's external IP address:
+
+    ```bash
+    ssh username@<VM_EXTERNAL_IP>
+    ```
+
+    - username: The username you use to log in to the VM. This typically depends on the operating system image you selected when creating the VM. Common usernames include "ubuntu," "ec2-user," or "gce-user."
+  <VM_EXTERNAL_IP>: Replace this with the actual external IP address of your VM.
+  For example, if you are using the "ubuntu" user on a VM with IP address "123.45.67.89," the command would look like:
+
+    ```  bash
+      ssh ubuntu@123.45.67.89
+    ```
+
+  - Authenticate:
+
+    If this is your first time connecting to the VM, you may be prompted to confirm the authenticity of the host by typing "yes." Afterward, you'll need to enter the password or key passphrase associated with the user account on the VM.
+
+    Once you successfully SSH into your VM, you will have command-line access to the VM's shell, and you can perform tasks on the VM as needed.
+
+## Install Terraform
+
+- Update the package list to ensure you have the latest information about available packages:
+
+```bash
+sudo apt update
+```
+
+- Install the required packages for adding HashiCorp's GPG key and HTTPS transport method for APT:
+
+```bash
+sudo apt install -y gnupg software-properties-common curl
+```
+
+- Add the HashiCorp GPG key to your system:
+
+```bash
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+```
+
+- Add the official HashiCorp repository to your APT sources:
+
+```bash
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
+
+- Update your package list again:
+
+```bash
+sudo apt update
+```
+
+- Finally, install Terraform:
+
+```bash
+sudo apt install terraform
+```
+
+```bash
+terraform -install-autocomplete
+```

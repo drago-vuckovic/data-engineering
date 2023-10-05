@@ -31,3 +31,11 @@ volumes:
   pgadmin_storage:
   pgadmin_sessions:
   azure_credential_cache:
+
+# create following directories in the same directory as docker-compose.yml
+#   - data_pgadmin
+#   - pgadmin_store 
+#   - sessions
+
+#  -  change their permissions
+#  sudo chmod -R 777 ./data_pgadmin ./pgadmin-storage ./sessions

@@ -27,3 +27,11 @@ which in turn produces `upload-data.py`
 
     `AIRFLOW_UID=50000`
 
+  - if *nix systems used, generate an `.env` file with the appropriate UID using the follwing command:
+
+    - `echo -e "AIRFLOW_UID"=$(id -u) > .env`
+
+  - for Windows:
+
+    - `echo AIRFLOW_UID=%USERPROFILE%`
+    

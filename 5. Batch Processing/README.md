@@ -107,9 +107,9 @@ df.write.parquet('zones')
 
 - Unlike `pandas`, `Spark` can handle much bigger datasets but it’s unable to infer the datatypes of each column.
 
-![Spark1](https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png)
+![Spark1](https://github.com/drago-vuckovic/data-engineering/blob/main/5.%20Batch%20Processing/images/1.png)
 
-![Spark2](https://github.com/yourusername/yourrepository/raw/main/path/to/your/image.png)
+![Spark2](https://github.com/drago-vuckovic/data-engineering/blob/main/5.%20Batch%20Processing/images/2.png)
 
 - You may generate a Python script using:
 

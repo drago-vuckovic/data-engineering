@@ -1,4 +1,4 @@
-# Apache Kafka
+# Apache Kafka: Real-time Data Streams
 
 - [Apache Kafka: Real-time Data Streams](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#apache-kafka-empowering-real-time-data-streams)
 
@@ -30,42 +30,39 @@
 
   - [Understanding Kafka: __consumer_offsets, Consumer Groups, and Partitions](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#understanding-kafka-__consumer_offsets-consumer-groups-and-partitions)
 
-[__consumer_offsets: Tracking Message Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#__consumer_offsets-tracking-message-consumption)
+    - [__consumer_offsets: Tracking Message Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#__consumer_offsets-tracking-message-consumption)
 
-[Consumer Groups: Collaborative Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-groups-collaborative-consumption)
+    - [Consumer Groups: Collaborative Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-groups-collaborative-consumption)
 
-[Partitions: Scalability and Ordering](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#partitions-scalability-and-ordering)
+    - [Partitions: Scalability and Ordering](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#partitions-scalability-and-ordering)
 
-[Kafka Partition Replication for Fault Tolerance](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-partition-replication-for-fault-tolerance)
+    - [Kafka Partition Replication for Fault Tolerance](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-partition-replication-for-fault-tolerance)
 
-[Replicating Partitions Across Brokers](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replicating-partitions-across-brokers)
+      - [Replicating Partitions Across Brokers](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replicating-partitions-across-brokers)
 
-[Fault Tolerance and Leader Failures](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#fault-tolerance-and-leader-failures)
+      - [Fault Tolerance and Leader Failures](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#fault-tolerance-and-leader-failures)
 
-[Replication Factor at Topic Level](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replication-factor-at-topic-level)
+      - [Replication Factor at Topic Level](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replication-factor-at-topic-level)
 
+  - [Kafka Configurations: Fine-Tuning Your Kafka Ecosystem](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-configurations-fine-tuning-your-kafka-ecosystem)
 
-[Kafka Configurations: Fine-Tuning Your Kafka Ecosystem](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-configurations-fine-tuning-your-kafka-ecosystem)
+    - [Topic Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#topic-configurations)
 
-[Topic Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#topic-configurations)
+    - [Consumer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-configurations)
 
-[Consumer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-configurations)
+    - [Producer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#producer-configurations)
 
-[Producer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#producer-configurations)
+  - [Avro and Schema Registry: The Importance of Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry-the-importance-of-schemas)
 
-[Avro and Schema Registry: The Importance of Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry-the-importance-of-schemas)
+    - [The Need for Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#the-need-for-schemas)
 
-[The Need for Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#the-need-for-schemas)
+    - [Avro and Schema Registry](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry)
 
-[Avro and Schema Registry](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry)
+  - [Introduction to Avro: Efficient Data Serialization with Schema Separation](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#introduction-to-avro-efficient-data-serialization-with-schema-separation)
+  
+    - [Schema Registry Workflow](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#schema-registry-workflow)
 
-[Avro Schema Evolution](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-schema-evolution)
-
-[Schema Registry Workflow](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#schema-registry-workflow)
-
-[Handling Incompatible Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#handling-incompatible-schemas)
-
-# Apache Kafka: Real-time Data Streams
+    - [Handling Incompatible Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#handling-incompatible-schemas)
 
 Apache Kafka, a versatile message broker and stream processor, revolutionizes the handling of real-time data feeds, offering a robust solution for modern data projects.
 

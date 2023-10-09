@@ -296,5 +296,5 @@ df \
     .show()
 ```
 
-In summary, Spark offers a wealth of built-in functions and the flexibility to create UDFs to address complex data manipulation tasks. This versatility empowers data engineers and data scientists to efficiently handle diverse data processing needs within Spark.
+Spark offers a wealth of built-in functions and the flexibility to create UDFs to address complex data manipulation tasks. This versatility empowers data engineers and data scientists to efficiently handle diverse data processing needs within Spark.
 

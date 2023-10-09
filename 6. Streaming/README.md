@@ -1,4 +1,71 @@
-# Apache Kafka: Empowering Real-time Data Streams
+# Apache Kafka
+
+- [Apache Kafka: Real-time Data Streams](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#apache-kafka-empowering-real-time-data-streams)
+
+  - [The Role of Consumers and Producers](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#the-role-of-consumers-and-producers)
+
+  - [The Challenge of Direct Connections](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#the-challenge-of-direct-connections)
+
+  - [Kafka: The Mediator](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-the-mediator)
+
+  - [How Kafka Works](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#how-kafka-works)
+
+  - [Kafka's Prevalence](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafkas-prevalence)
+
+  - [Basic Kafka Components](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#basic-kafka-components)
+
+    - [Message](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#message)
+
+    - [Topic](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#topic)
+
+    - [Broker and Cluster](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#broker-and-cluster)
+
+    - [Logs](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#logs)
+
+  - [Visualizing Kafka Message Flow](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#visualizing-kafka-message-flow)
+
+    - [Producer Sending Messages to Kafka](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#producer-sending-messages-to-kafka)
+
+    - [Consumer Receiving Messages](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-receiving-messages)
+
+  - [Understanding Kafka: __consumer_offsets, Consumer Groups, and Partitions](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#understanding-kafka-__consumer_offsets-consumer-groups-and-partitions)
+
+[__consumer_offsets: Tracking Message Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#__consumer_offsets-tracking-message-consumption)
+
+[Consumer Groups: Collaborative Consumption](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-groups-collaborative-consumption)
+
+[Partitions: Scalability and Ordering](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#partitions-scalability-and-ordering)
+
+[Kafka Partition Replication for Fault Tolerance](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-partition-replication-for-fault-tolerance)
+
+[Replicating Partitions Across Brokers](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replicating-partitions-across-brokers)
+
+[Fault Tolerance and Leader Failures](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#fault-tolerance-and-leader-failures)
+
+[Replication Factor at Topic Level](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#replication-factor-at-topic-level)
+
+
+[Kafka Configurations: Fine-Tuning Your Kafka Ecosystem](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#kafka-configurations-fine-tuning-your-kafka-ecosystem)
+
+[Topic Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#topic-configurations)
+
+[Consumer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#consumer-configurations)
+
+[Producer Configurations](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#producer-configurations)
+
+[Avro and Schema Registry: The Importance of Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry-the-importance-of-schemas)
+
+[The Need for Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#the-need-for-schemas)
+
+[Avro and Schema Registry](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-and-schema-registry)
+
+[Avro Schema Evolution](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#avro-schema-evolution)
+
+[Schema Registry Workflow](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#schema-registry-workflow)
+
+[Handling Incompatible Schemas](https://github.com/drago-vuckovic/data-engineering/blob/main/6.%20Streaming/README.md#handling-incompatible-schemas)
+
+# Apache Kafka: Real-time Data Streams
 
 Apache Kafka, a versatile message broker and stream processor, revolutionizes the handling of real-time data feeds, offering a robust solution for modern data projects.
 

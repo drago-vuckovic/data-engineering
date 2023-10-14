@@ -1,3 +1,9 @@
 spring:
   main:
     banner-mode: OFF
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      group-id: "myGroup"
+    schema:
+      registry-url: "http://schema-registry:8081"

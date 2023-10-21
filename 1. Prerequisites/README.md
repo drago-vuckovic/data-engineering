@@ -258,6 +258,50 @@ cat ~/.ssh/id_rsa.pub
 
 This will display the public key in the terminal. You can copy and paste this public key when needed to authorize access to your SSH server or services.
 
+## Google Cloud Platform (GCP)
+
+- Includes a range of hosted services for compute, storage and application development that run on Google hardware
+
+### Initial Setup
+
+- Create an account with a Google email ID
+- Setup a [project](https://console.cloud.google.com/) and note down the "Project ID"
+- Setup [service account and authentication](https://cloud.google.com/docs/authentication/getting-started) for the project
+  - grant `Viewer` role to begin with
+  - download service account-keys (.json) for the auth
+  - download [SDK](https://cloud.google.com/sdk/docs/quickstart) for local setup
+  - set environment variable to point to your downloaded GCP keys:
+
+    ```bash
+    export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"
+
+    # Refresh token/session, and verify authentication
+    gcloud auth application-default login
+    ```
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/1.png)
+
+
+### Setup for Access
+
+1. IAM Roles for Service account:
+
+    - At the IAM section of IAM & Admin <https://console.cloud.google.com/iam-admin/iam>
+
+    - Click the Edit principal icon for your service account
+
+    - Add these roles in addition to `Viewer`:
+      - Storage Admin + Storage Object Admin + BigQuery Admin
+
+2. Enable these APIs for your project:
+
+    https://console.cloud.google.com/apis/library/iam.googleapis.com
+    https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+
+3. Please ensure `GOOGLE_APPLICATION_CREDENTIALS` `env-var` is set.
+
+    `export GOOGLE_APPLICATION_CREDENTIALS="<path/to/your/service-account-authkeys>.json"`
+
 ### Upload the public key to GCP
 
 To upload your SSH public key to Google Cloud Platform (GCP), you can add it to the metadata of your Google Cloud user account. 

@@ -279,8 +279,33 @@ This will display the public key in the terminal. You can copy and paste this pu
     gcloud auth application-default login
     ```
 
-![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/1.png)
-![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/2.png)
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/01.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/02.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/03.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/04.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/05.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/06.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/07.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/08.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/09.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/10.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/11.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/12.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/13.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/14.png)
 
 ### Setup for Access
 

@@ -280,7 +280,7 @@ This will display the public key in the terminal. You can copy and paste this pu
     ```
 
 ![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/1.png)
-
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/2.png)
 
 ### Setup for Access
 

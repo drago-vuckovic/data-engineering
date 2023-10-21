@@ -1,4 +1,4 @@
-package co.vuckovic.streaming.kafkademo.configuration;
+package co.vuckovic.streaming.kafkademo;
 
 //import io.confluent.kafka.serializers.AbstractKafkaAvroSerDeConfig;
 //import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig;

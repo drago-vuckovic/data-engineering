@@ -351,6 +351,38 @@ This will display the public key in the terminal. You can copy and paste this pu
 
 ![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/36.png)
 
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/37.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/38.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/39.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/40.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/41.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/42.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/43.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/44.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/45.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/46.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/47.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/48.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/49.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/50.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/51.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/52.png)
+
 
 
 ### Setup for Access

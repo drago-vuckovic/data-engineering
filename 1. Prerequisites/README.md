@@ -307,6 +307,52 @@ This will display the public key in the terminal. You can copy and paste this pu
 
 ![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/14.png)
 
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/15.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/16.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/17.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/18.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/19.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/20.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/21.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/22.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/23.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/24.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/25.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/26.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/27.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/28.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/29.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/30.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/31.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/32.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/33.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/34.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/35.png)
+
+![GCP1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Prerequisites/images/36.png)
+
+
+
 ### Setup for Access
 
 1. IAM Roles for Service account:

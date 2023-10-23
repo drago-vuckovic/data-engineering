@@ -235,3 +235,15 @@ These components collectively enable the automation and management of data workf
     ```bash
     - AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     ```
+
+### A Lite Setup
+
+To create a simplified Docker Compose configuration for Airflow with a LocalExecutor, follow these steps to modify the existing docker-compose.yaml file:
+
+- Remove the services you no longer need: `redis`, `airflow-worker`, `airflow-triggerer`, and `flower`.
+
+- Change the `AIRFLOW__CORE__EXECUTOR` environment variable to use `LocalExecutor`:
+
+- Remove the lines that depend on the `redis` service, as mentioned.
+
+- Comment out the `AIRFLOW__CELERY__RESULT_BACKEND` and `AIRFLOW__CELERY__BROKER_URL` environment variables

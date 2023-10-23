@@ -10,7 +10,6 @@ which in turn produces `upload-data.py`
 
 - clean out the script by removing comments, reorder imports and save as ingest_data.py
 
-
 ## Data Lake
 
 A Data Lake serves as a centralized repository for aggregating vast volumes of data from diverse origins. This data repository can encompass structured, unstructured, or a combination of data formats.
@@ -94,7 +93,7 @@ The primary focus will be on Apache Airflow, which is a popular tool for orchest
 
 ### Airflow Architecture
 
-![AA1](https://github.com/drago-vuckovic/data-engineering/blob/main/1.%20Data%20Ingestion/images/1.png)
+![AA1](https://github.com/drago-vuckovic/data-engineering/blob/main/2.%20Data%20Ingestion/images/1.png)
 
 A typical `Apache Airflow` installation includes several key components that work together to facilitate workflow orchestration and automation. These components are:
 

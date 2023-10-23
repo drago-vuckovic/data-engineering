@@ -1,22 +1,4 @@
-# Workflow Orchestration
-
-## Core Features of Workflow Orchestration
-
-- Remote Excution
-
-- Scheduling
-
-- Retries
-
-- Caching
-
-- Integration with external systems (APIs, databases)
-
-- Ad-huo runs
-
-- Parameterization
-
-- Alerting you when something fails
+# Python Virtual Environments
 
 ## Create Virtualenv and install dependencies
 

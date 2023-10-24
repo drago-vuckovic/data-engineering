@@ -233,7 +233,7 @@
 - To generate a new SSH key pair (public and private key), use the following command:
 
 ```bash
-ssh-keygen -t rsa -b 4096 -C "drago@vuckovic.co"
+ssh-keygen -t rsa -b 4096 -C drago
 ```
 
   - This email address is used as a label to help identify the key later if needed.
@@ -242,7 +242,7 @@ ssh-keygen -t rsa -b 4096 -C "drago@vuckovic.co"
 
 `-b 4096`: Sets the key length to 4096 bits (recommended for increased security).
 
-`-C "drago@vuckovic.co"`: Provides a comment to help identify the key (you can use any comment you like).
+`-C drago`: Provides a comment to help identify the key (you can use any comment you like).
 
 Choose a Location: The ssh-keygen command will prompt you to choose a location to save the keys. By default, it saves the keys in your home directory under ~/.ssh/id_rsa (private key) and ~/.ssh/id_rsa.pub (public key). You can press Enter to accept the default location or specify a different one if you prefer.
 
